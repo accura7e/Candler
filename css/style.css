@@ -7,6 +7,7 @@ html{
 *::after,
 *::before{
     box-sizing: inherit;
+    background-repeat: no-repeat;
 }
 
 body{
@@ -23,6 +24,10 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+ul{
+    list-style: none;
 }
 
 .container{
@@ -50,4 +55,45 @@ a{
 
 .menu__list-link{
     text-transform: uppercase;
+}
+
+.phone{
+    position: relative;
+}
+
+.phone::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/tel.svg);
+    width: 20px;
+    height: 20px;
+    left: -23px;
+    top: -3px;
+}
+
+.footer{
+    padding: 40px 0 35px;
+}
+
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.email{
+    margin: 17px 0;
+}
+
+
+.footer__social{
+    display: flex;
+    gap: 15px;
 }
