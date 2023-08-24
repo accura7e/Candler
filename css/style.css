@@ -172,6 +172,7 @@ ul{
     }
 
     .header__menu-list{
+        z-index: 1;
         width: 153px;
         background-color: #7B6152;
         color: #FFF8F3;
@@ -180,7 +181,8 @@ ul{
         padding: 25px 35px 25px 45px;
         position: absolute;
         left: 0;
-        transform: translateY(-200%) ;
+        top: 0;
+        transform: translateY(-110%) ;
         transition: transform .3s  ease;
     }
 
