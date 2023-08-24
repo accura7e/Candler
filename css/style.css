@@ -13,7 +13,6 @@ html{
 body{
     color: #000;
     font-family: 'Comfortaa', cursive;
-    /* font-family: 'Yeseva One', cursive; */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -26,8 +25,19 @@ a{
     color: inherit;
 }
 
+.main{  
+    background-color: #FFF8F3;
+}
+
 ul{
     list-style: none;
+}
+
+button{
+    cursor: pointer;
+   border: none;     
+   padding: 0;
+   border-radius: 0;
 }
 
 .container{
@@ -37,14 +47,13 @@ ul{
 }
 
 .menu__btn{
-    cursor: pointer;
+
     display: none;
     width: 30px;
     height: 25px;
-    border: none;
+    
     background-color: transparent;
-    padding: 0;
-    border-radius: 0;
+
     flex-direction: column;
     justify-content: space-between;
 }
@@ -90,6 +99,62 @@ ul{
     top: -3px;
 }
 
+
+
+
+
+.top{
+    padding: 40px 0 150px;
+
+}
+.top__inner{
+    position: relative;
+}
+
+.top__content{
+    width: 370px;
+    padding: 150px 0 250px;
+}
+
+
+.top__title{
+    font-size: 30px;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 15px;
+}
+
+.top__text{
+    margin-bottom: 48px;
+}
+
+.top__buy{
+    padding: 18px 54px;
+    background: #FFBD59;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.top__img{
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     padding: 40px 0 35px;
 }
@@ -116,6 +181,12 @@ ul{
     display: flex;
     gap: 15px;
 }
+
+
+
+
+
+
 
 
 @media(max-width: 1000px){
