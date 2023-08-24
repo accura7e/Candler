@@ -172,7 +172,20 @@ ul{
     }
 
     .header__menu-list{
-        display: none;
+        width: 153px;
+        background-color: #7B6152;
+        color: #FFF8F3;
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 35px 25px 45px;
+        position: absolute;
+        left: 0;
+        transform: translateY(-200%) ;
+        transition: transform .3s  ease;
+    }
+
+    .header__menu-list.menu--open{
+        transform: translateY(0%) ;
     }
 
     .menu__btn{
