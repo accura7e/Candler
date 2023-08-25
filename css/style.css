@@ -17,7 +17,14 @@ body{
     font-style: normal;
     font-weight: 400;
     
-    line-height: 120%;
+    
+}
+
+.title {
+    font-family: Yeseva One;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 a{
@@ -41,10 +48,43 @@ button{
    border-radius: 0;
 }
 
+.button {
+    padding: 18px 54px;
+    background: #FFBD59;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 .container{
     max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.section--decor{
+    position: relative;
+}
+
+.section--decor::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/section-decor.png);
+    width: 22px;
+    height: 30px;
+}
+
+.section--decor::after{
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: 13px;
+    background-color: #7B6152;
+    width: 10000%;
+    height: 1px;
 }
 
 .menu__btn{
@@ -122,6 +162,7 @@ button{
     font-size: 30px;
     font-family: 'Yeseva One', cursive;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .top__text{
@@ -151,6 +192,7 @@ button{
     background-color: #A5978E;
     padding: 50px 0 50px;
     color: #FAFAFA;
+    margin-bottom: 150px;
 }
 
 .about__inner {
@@ -160,11 +202,7 @@ button{
 .about__content {
     min-width:  370px;
 }
-.about__title {
-    font-family: Yeseva One;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
+
 .about__text {
     margin-bottom: 15px;
 }
@@ -175,28 +213,11 @@ button{
     align-items: center;
     gap: 20px;
     flex-basis: 930px;
-    position: relative;
+
 }
 
-.about__list::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/about-decor.png);
-    width: 22px;
-    height: 30px;
-}
 
-.about__list::after{
-    content: '';
-    position: absolute;
-    left: 22px;
-    bottom: 13px;
-    background-color: #7B6152;
-    width: 10000%;
-    height: 1px;
-}
+
 
 
 .about__item-img {
@@ -210,6 +231,56 @@ button{
 
 
 
+
+
+
+.section__content-descr{
+    padding-bottom: 92px;
+}
+
+
+.section__inner {
+    display: grid;
+    grid-template-columns: 370px auto;
+}
+
+
+.section{
+    padding-bottom: 150px;
+}
+
+.section__content-descr{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.products__content {
+    gap: 50px 90px;
+}
+.products__item {
+    margin: 0 auto;
+    width: 290px;
+    text-align: center;
+}
+.products__item-img {
+    margin-bottom: 8px;
+}
+.product__item-price {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.products_item-title {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.product__item-text {
+    margin-bottom: 27px;
+    font-size: 12px;
+}
 
 
 
