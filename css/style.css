@@ -336,6 +336,44 @@ button{
 
 
 
+.courses__item-img{
+    position: relative;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.courses__title {
+    padding: 15px;
+    left: -1px;
+    top: 45%;
+}
+.courses__time {
+    padding: 7px 10px;
+    left: -1px;
+    top: 60%;
+}
+
+.courses__time span{
+    font-family: 'Comfortaa', cursive;
+}
+.courses__price {
+    padding: 19px 10px;
+    right: -10px;
+    bottom: 2px;
+}
+
+.courses__price span{
+    font-family: 'Comfortaa', cursive;
+}
+
+.courses__price,
+.courses__time,
+.courses__title{
+    background:  #BEA495;
+    position: absolute;
+}
+
 
 
 
@@ -669,6 +707,24 @@ button{
     .section__descr{
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .courses__title {
+        padding: 6px;
+        left: -1px;
+        top: 40%;
+    }
+
+    .courses__time{
+        padding: 5px;
+        left: -1px;
+        top: 55%;
+    }
+
+    .courses__price{
+        padding: 10px;
+        right: 0px;
+        bottom: 9px;
     }
 }
 
