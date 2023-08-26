@@ -301,10 +301,7 @@ button{
 }
 
 
-.section__content-descr {
-}
-.section--decor {
-}
+
 .steps__item {
     display: flex;
     gap: 40px;
@@ -331,15 +328,10 @@ button{
     left: auto;
     right: 0;
 }
-.steps__item--odd {
-}
+
 .steps__item-text {
     flex-basis: 174px;
     padding-bottom: 40px;
-}
-.steps__item-img {
-}
-.steps__item--even {
 }
 
 
@@ -462,6 +454,11 @@ button{
     .section__text{
         font-size: 10px;
     }
+
+    .steps__item-img{
+        width: 128px;
+        height: 225px;
+    }
 }
 
 @media(max-width: 900px){
@@ -489,9 +486,30 @@ button{
         gap: 30px 16px;
     }
 
+    .steps__list{
+        gap: 37px 35px;
+    }
 
+        .steps__item{
+            gap: 0 30px;
+        }
 
+    .steps__list{
+        gap: 37px 35px;
+    }
 
+    .steps__item{
+        gap: 0 20px;
+    }
+
+    .steps__item-img{
+        width: 85px;
+        height: 150px;
+    }
+
+    .steps__item-text{
+        font-size: 8px;
+    }
 
     
 }
