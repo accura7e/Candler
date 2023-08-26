@@ -16,3 +16,19 @@ const swiperOne = new Swiper('.feedback__slider', {
   
 
   });
+
+  
+const swiperTwo = new Swiper('.certificates__slider', {
+
+    loop: true,
+    slidesPerView: '3',
+    spaceBetween: '20',
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      
+    },
+  
+
+  });
