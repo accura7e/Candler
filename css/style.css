@@ -502,6 +502,51 @@ button{
 
 
 
+.accordeon__item {
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+.accordeon__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 16px;
+    display: block;
+    background-color: transparent;
+    padding: 16px 50px 16px 13px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.accordeon__title::after{
+    content: '';
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px;
+    
+}
+
+.accordeon__title.accordeon__text--active::after{
+    transform: rotate(180deg);
+}
+.accordeon__text {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity .3s, max-height .3s;
+}
+
+.accordeon__text ol{
+    padding: 20px 40px;
+}
+
+.accordeon__text.accordeon__text--visible{
+    opacity: 1;
+}
+
+
+
 
 .promo {
     background-image: url(../images/promo.jpg);
